@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      display: flex;
+      width: 100%;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px;
+    }
+
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Indiana Jones</h1>
+    <div class="row">
+      <div class="column">
+        <img src="images/raiders.jpg" alt="Raiders of the Lost Ark Movie Poster">
+        <h3>Raiders of the Lost Ark</h3>
+        <p>Harrison Ford portrays Indiana Jones, a globe-trotting archaeologist vying with Nazi German forces in 1936 to recover the long-lost Ark of the Covenant, a relic said to make an army invincible.</p>
+      </div>
+      <div class="column">
+        <img src="images/temple.jpg" alt="Temple of Doom Movie Poster">
+        <h3>Temple of Doom</h3>
+        <p>Indiana Jones, on the trail of fortune and glory in Old Shanghai, is ricocheted into a dangerous adventure in India. With his faithful companion Short Round and nightclub singer Willie Scott, Indie goes in search of the magical Sankara stone, and uncovers an ancient evil which threatens all who come into contact with it.</p>
+      </div>
+      <div class="column">
+        <img src="images/crusade.jpg" alt="The Last Crusade Movie Poster">
+        <h3>The Last Crusade</h3>
+        <p>Indiana Jones sets out to rescue his father, a medievalist who has vanished while searching for the Holy Grail. Following clues in the old man's notebook, Indy arrives in Venice, where he enlists the help of a beautiful academic, but they are not the only ones who are on the trail, and some sinister old enemies soon come out of the woodwork.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Complete the HTML here -->
+
+</body>
+</html>
